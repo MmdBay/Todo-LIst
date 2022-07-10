@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    overflow: hidden;
+}
+.rtl {
+    direction: rtl;
+}
+#back {
+    background-image: url(./src/background/1746017.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+#back-color {
+    background-color: rgba(0, 0, 0, 0.452);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+#sort {
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.452);
+    padding:0.1em 0.3em;
+    color: #fff;
+    line-height: 270%;
+    transition: 0.3s;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#sort option {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.box{
+    width: 40px;
+    height: 25px;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 12px 0 12px 27px;
+    border-color: transparent transparent transparent rgb(136, 136, 255);
+    transition: all 100ms ease-in-out;
+    z-index: 11;
+}
+.add {
+    border-style: double;
+    border-width: 0 0 0 20px;
+}
+.box small {
+    border: none;
+}
+#music {
+    display: none;
+}
+.input {
+    color: aliceblue;
+    outline: none;
+    background-color: rgba(24, 24, 24, 0);
+    border: none;
+    border-bottom: 1px solid rgb(136, 136, 255);
+    transition: 300ms;
+
+}
+.input:focus{
+    border-bottom: 1px solid rgb(79 70 229);
+    background-color: rgba(32, 32, 32, 0.568);
+    border-radius: 4px 4px 0 0;
+}
+.button {
+    transition: 0.3s;
+    border: none;
+    background-color: rgb(136, 136, 255);
+    color: black;
+}
+#title {
+    border: 1px solid rgb(136, 136, 255);
+    width: 80%;
+    margin:0.5em auto;
+    padding: 0;
+    overflow-y: auto;
+    height: 50vh;
+}
+#title div {
+    width: 95%;
+    padding: 0.3em;
+    margin: 0.3em auto;
+    background-color: rgba(32, 32, 32, 0.781);
+    border-radius: 0.3em;
+    color: #fff;
+    position: relative;
+    overflow: auto;
+}
+#title div input {
+    margin: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+#title div span {
+    margin: 0 10px;
+}
+#title div small {
+    margin: 0 10px;
+    color: greenyellow;
+}
+#title div button {
+    position: absolute;
+    left: 0.3em;
+    color: rgb(235, 84, 25);
+}
+#title div a {
+    position: absolute;
+    left: 2em;
+}
+@media screen and (max-width:940px) {
+    #back {
+        background-image: url(./src/background/926820.jpg);
+    }
+    #title {
+        width: 95%;
+    }
+}
+@media screen and (max-height: 910px) {
+    #title {
+        height:53vh;
+        width: 95%;
+    }
+}
+@media screen and (max-height: 840px) {
+    #title {
+        height:40vh;
+    }
+}
+@media screen and (max-height: 720px) {
+    #title {
+        height:44vh;
+    }
+    .mus {
+        top: 8px;
+    }
+    .mus1 {
+        top: 32px;
+    }
+}
+@media screen and (max-height: 600px) {
+    #title {
+        height:33vh;
+    }
+}
+@media screen and (max-height: 510px) {
+    #title {
+        height:20vh;
+    }
+    .box {
+        bottom: 22%;
+        left: 4%;
+    }
+    .small-m {
+        bottom: 16%;
+        left: 5%;
+    }
+}
+/* @media screen and (max-width: ) {
+    
+} */
